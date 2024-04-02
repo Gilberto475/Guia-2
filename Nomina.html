@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Nomina</title>
+<meta name="viewport" content="width-device-width, initial-scale-1.0">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <form method="post" action="php/Operaciones.php">
+   Tipo de Documento:
+   <select name="Tipo">
+    <option>Cedula</option>
+    <option>Tarjeta de Identidad</option>
+    <option>Pasaporte Extranjero</option>
+   </select>
+   <br>
+   Nombre del Empleado:
+    <input type="text" name="nombre">
+    <br>
+   Numero de documento:
+    <input type="number" name="numero">
+    <br>
+   Salario:
+    <input type="number" name="salario">
+    <br>
+   Dias Trabajados:
+    <input type="number" name="dias">
+    <br>
+   Numero de Horas Extras Diurnas:
+    <input type="number" name="horas">
+    <br>
+   Numero de Horas Extras Nocturnas:
+    <input type="number" name="horasnoc">
+    <br>
+    Numero de Horas Extras Festivas Diurnas:
+    <input type="number" name="horasfes">
+    <br>
+    Numero de Horas Extras Festivas Nocturnas:
+    <input type="number" name="horasfesnoc">
+    <br>
+    <input type="submit" value="confirmar">
+  </form>
+</body>
+</html>

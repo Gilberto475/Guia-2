@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacion Climatica</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Estacion Climatica</h2>
+    <form method="post" action="php/clima.php">
+        <label for="num_dias">Número de días:</label>
+        <input type="number" name="num_dias" required><br><br>
+        <input type="submit" name="submit" value="Siguiente">
+    </form>
+    <button><a href="Menu.html">Ir al menú</a></button>
+</body>
+</html>

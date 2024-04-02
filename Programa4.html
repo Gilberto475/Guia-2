@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de incentivos y salario semanal</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+        }
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 70%;
+            margin-left: 60px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Calculadora de incentivos y salario semanal</h1>
+        <form action="php/prog4.php" method="post">
+            <label for="produccion">Ingrese la producción semanal (unidades):</label><br>
+            <input type="number" id="produccion" name="produccion" required><br><br>
+            <button type="submit">Calcular</button>
+            <button> <a href="Menu.html">Ir al menu</a> </button>
+        </form> 
+        
+        <table>
+            <tr>
+                <th>Promedio de Producción (Unidades)</th>
+                <th>Incentivo Ingreso</th>
+                <th>Ingreso</th>
+            </tr>
+            <tr>
+                <td>0 a 99</td>
+                <td>0% sobre el ingreso total</td>
+                <td>$2 por unidad producida</td>
+            </tr>
+            <tr>
+                <td>100 a 199</td>
+                <td>10% sobre el ingreso total</td>
+                <td>$2 por unidad producida</td>
+            </tr>
+            <tr>
+                <td>200 a 299</td>
+                <td>12% sobre el ingreso total</td>
+                <td>$2.5 por unidad producida</td>
+            </tr>
+            <tr>
+                <td>300 a 399</td>
+                <td>14% sobre el ingreso total</td>
+                <td>$3 por unidad producida</td>
+            </tr>
+            <tr>
+                <td>400 o más</td>
+                <td>16% sobre el ingreso total</td>
+                <td>$3.5 por unidad producida</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
